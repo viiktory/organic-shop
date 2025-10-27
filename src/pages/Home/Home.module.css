@@ -1,0 +1,12 @@
+.home {
+    background: url("@/assets/background.jpg") no-repeat center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   height: 100vh;
+}
+.homeContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

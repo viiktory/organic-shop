@@ -1,0 +1,37 @@
+.header {
+    height: 6rem;
+    background: var(--background);
+
+    .headerNavbar {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .headerLogo {
+        height: 3rem;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .headerList{
+        display: flex;
+        gap: 2rem;
+        font-family: 'Roboto', serif;
+        font-weight: 700;
+        color: var(--primary);
+    }
+
+    .headerNavigation {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .headerCartIcon {
+        height: 3rem;
+        width: 3rem;
+    }
+}
+
