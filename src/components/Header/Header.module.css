@@ -1,37 +1,52 @@
 .header {
     height: 6rem;
     background: var(--background);
-
-    .headerNavbar {
-        display: flex;
-        flex-grow: 1;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .headerLogo {
-        height: 3rem;
-        display: flex;
-        align-items: center;
-
-    }
-
-    .headerList{
-        display: flex;
-        gap: 2rem;
-        font-family: 'Roboto', serif;
-        font-weight: 700;
-        color: var(--primary);
-    }
-
-    .headerNavigation {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-    }
-    .headerCartIcon {
-        height: 3rem;
-        width: 3rem;
-    }
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
 }
 
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header__btn {
+
+}
+
+.header__list {
+    display: flex;
+    gap: 2rem;
+    font-family: 'Roboto', serif;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.header__actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header__cart_icon {
+    height: 3rem;
+    width: 3rem;
+    transition: transform 0.2s ease;
+}
+
+.header__cart_icon:hover {
+    transform: scale(1.1);
+}

@@ -1,13 +1,10 @@
-import Header from '@/components/Header/Header.tsx'
-import Home from "@/pages/Home/Home.tsx";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { routes } from './routes/routes'
+
+const routers = createBrowserRouter(routes)
 
 function App() {
-  return (
-    <>
-    <Header />
-    <Home />
-    </>
-  )
+  return <RouterProvider router={routers} />
 }
 
 export default App

@@ -1,18 +1,24 @@
 import ArrowRight from '@/assets/icons/arrow.svg?react'
-import Title from '@/components/Title/Title'
 import styles from './Home.module.css'
+import Advertising from '../../components/About/Advertising.tsx'
 
 const Home = () => {
   return (
-    <section className={styles.home}>
-      <div className={`${styles.homeContainer} container`}>
-        <Title span="100% Natural Food" title="Choose the best healthier way of life" />
-        <button className="button">
-          Explore Now
-          <ArrowRight />
-        </button>
-      </div>
-    </section>
+    <>
+      <section className={styles.home}>
+        <div className={`${styles.homeContainer} container`}>
+          <span>100% Natural Food</span>
+          <h1 className={styles.homeTitle}>
+            Choose the best <br /> healthier way <br /> of life
+          </h1>
+          <button className="button">
+            Explore Now
+            <ArrowRight />
+          </button>
+        </div>
+      </section>
+      <Advertising />
+    </>
   )
 }
 

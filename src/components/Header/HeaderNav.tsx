@@ -1,12 +1,13 @@
 import { NavLink } from 'react-router-dom'
+import { PATHS } from '@/routes/paths'
 
 const navLinks = [
-  { name: 'Home', path: '/' },
-  { name: 'About', path: '/about' },
-  { name: 'Page', path: '/page' },
-  { name: 'Shop', path: '/shop' },
-  { name: 'Project', path: '/project' },
-  { name: 'News', path: '/news' },
+  { name: 'Home', path: PATHS.HOME },
+  { name: 'About', path: PATHS.ABOUT },
+  { name: 'Page', path: PATHS.PAGE },
+  { name: 'Shop', path: PATHS.SHOP },
+  { name: 'Project', path: PATHS.PROJECT },
+  { name: 'News', path: PATHS.NEWS },
 ]
 type Props = {
   className?: string

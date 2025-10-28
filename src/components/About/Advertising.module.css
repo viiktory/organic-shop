@@ -1,0 +1,33 @@
+.advertising {
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding-block: 6rem;
+}
+
+.advertisingBox1,
+.advertisingBox2 {
+    flex: 1;
+    height: 20rem;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--background);
+    border-radius: 1rem;
+}
+
+.advertisingBox1 {
+    background: url("@/assets/images/background-cart-1.jpg") no-repeat center center;
+}
+
+.advertisingBox2 {
+    background: url("@/assets/images/background-cart-2.jpg") no-repeat center center;
+}
+
+.advertisingTitle {
+    color: var(--background);
+    font-size: 40px;
+}

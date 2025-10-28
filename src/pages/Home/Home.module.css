@@ -1,12 +1,20 @@
 .home {
-    background: url("@/assets/background.jpg") no-repeat center center;
+    background: url("@/assets/images/background.jpg") no-repeat center center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-   height: 100vh;
+    min-height: 100vh;
+    padding-top: 6rem;
+
 }
-.homeContainer{
+
+.homeContainer {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+.homeTitle {
+    font-size: var(--title-h1);
+    color: var(--primary);
 }

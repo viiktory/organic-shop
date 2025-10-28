@@ -12,10 +12,10 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-    width: 100%;
-    line-height: 1;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 input,
