@@ -1,6 +1,6 @@
 import ArrowRight from '@/assets/icons/arrow.svg?react'
 import styles from './Home.module.css'
-import Advertising from '../../components/About/Advertising.tsx'
+import { About } from '@/pages'
 
 const Home = () => {
   return (
@@ -17,7 +17,7 @@ const Home = () => {
           </button>
         </div>
       </section>
-      <Advertising />
+      <About />
     </>
   )
 }

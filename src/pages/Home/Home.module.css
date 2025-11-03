@@ -6,6 +6,10 @@
     min-height: 100vh;
     padding-top: 6rem;
 
+    span{
+        color: var(--spanColor);
+    }
+
 }
 
 .homeContainer {

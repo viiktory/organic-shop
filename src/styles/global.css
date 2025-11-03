@@ -41,7 +41,7 @@ p {
 span {
     font-family: 'Yellowtail', sans-serif;
     font-size: var(--title-span);
-    color: var(--spanColor);
+    /*color: var(--spanColor);*/
 }
 
 .button {

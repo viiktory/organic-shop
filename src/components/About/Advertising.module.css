@@ -14,20 +14,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    color: var(--background);
     border-radius: 1rem;
+    padding-left: 2rem;
 }
 
 .advertisingBox1 {
     background: url("@/assets/images/background-cart-1.jpg") no-repeat center center;
+    color: var(--background);
 }
 
 .advertisingBox2 {
     background: url("@/assets/images/background-cart-2.jpg") no-repeat center center;
+    color: var(--spanColor);
+
 }
 
 .advertisingTitle {
-    color: var(--background);
     font-size: 40px;
 }
