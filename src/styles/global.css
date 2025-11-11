@@ -11,7 +11,12 @@
     --title-h1: 70px;
     --title-h2: 50px;
     --title-span: 36px;
+    --span-mob: 24px;
     --description: 18px;
+}
+
+body {
+    font-family: 'Roboto', serif;
 }
 
 .container {
@@ -23,7 +28,6 @@
 }
 
 h1, h2, h3 {
-    font-family: 'Roboto', serif;
     font-weight: 800;
 }
 
@@ -35,17 +39,14 @@ h2 {
 p {
     font-family: 'Open Sans', sans-serif;
     font-size: var(--description);
-    color: var(--descriptionColor);
 }
 
 span {
     font-family: 'Yellowtail', sans-serif;
     font-size: var(--title-span);
-    /*color: var(--spanColor);*/
 }
 
 .button {
-    font-family: 'Roboto', serif;
     color: var(--primary);
     background-color: var(--backgroundBtn);
     display: inline-flex;
@@ -55,5 +56,31 @@ span {
     width: 220px;
     padding: 25px 40px;
     border-radius: 20px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
 
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background-color: var(--spanColor);
+}
+
+.button svg {
+    transition: transform 0.3s ease;
+}
+
+.button:hover svg {
+    transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+    .button {
+        padding: 15px 25px;
+        width: 180px;
+        font-size: 0.9rem;
+    }
 }
