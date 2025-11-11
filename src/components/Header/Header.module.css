@@ -1,13 +1,16 @@
 .header {
-    height: 6rem;
-    background: var(--background);
     display: flex;
     align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 100;
+    z-index: 50;
+    height: 6rem;
+    background: var(--background);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(10px);
+
 }
 
 .header__navbar {
@@ -21,10 +24,25 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    z-index: 51;
 }
 
 .header__btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2.4rem;
+    cursor: pointer;
+    color: var(--primary);
+    z-index: 52;
+}
 
+.header__btn svg {
+    transition: transform 0.3s ease;
+}
+
+.header__btn:hover svg {
+    transform: rotate(180deg);
 }
 
 .header__list {
@@ -45,8 +63,37 @@
     height: 3rem;
     width: 3rem;
     transition: transform 0.2s ease;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: transform 0.2s ease, color 0.2s ease;
+    }
 }
 
-.header__cart_icon:hover {
-    transform: scale(1.1);
+@media (max-width: 1024px) {
+    .header__btn {
+        display: block;
+    }
+
+    .header__list,
+    .header__actions {
+        display: none;
+    }
+
+    .header__list.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 3rem 2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        background: var(--background);
+        text-align: center;
+        z-index: 50;
+    }
 }

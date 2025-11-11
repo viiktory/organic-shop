@@ -9,6 +9,7 @@ const navLinks = [
   { name: 'Project', path: PATHS.PROJECT },
   { name: 'News', path: PATHS.NEWS },
 ]
+
 type Props = {
   className?: string
 }

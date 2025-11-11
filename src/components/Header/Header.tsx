@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { IoIosMenu } from 'react-icons/io'
+import { IoIosClose } from 'react-icons/io'
 import LogoIcon from '@/assets/icons/logo.svg?react'
 import CartIcon from '@/assets/icons/cart.svg?react'
 import { HeaderNav, SearchForm } from '@/components'
@@ -18,14 +20,17 @@ const Header = () => {
         <Link to="/" className={styles.header__logo}>
           <LogoIcon />
         </Link>
+
         <button
           onClick={handleOpen}
           aria-expanded={isOpen}
           aria-label={isOpen ? 'Close menu' : 'Open menu'}
           className={styles.header__btn}
-        ></button>
+        >
+          {isOpen ? <IoIosClose /> : <IoIosMenu />}
+        </button>
 
-        <HeaderNav className={styles.header__list} />
+        <HeaderNav className={`${styles.header__list} ${isOpen ? styles.active : ''}`} />
 
         <div className={styles.header__actions}>
           <SearchForm />

@@ -3,10 +3,10 @@ import styles from './SearchForm.module.css'
 
 const SearchForm = () => {
   return (
-    <form className={styles.searchForm}>
-      <input type="text" placeholder="Search ..." className={styles.searchInput} />
+    <form className={styles.search}>
+      <input type="text" placeholder="Search ..." className={styles.search__input} />
       <button type="submit">
-        <SearchIcon className={styles.searchIcon} />
+        <SearchIcon className={styles.search__icon} />
       </button>
     </form>
   )
